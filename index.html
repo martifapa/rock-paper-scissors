@@ -22,21 +22,28 @@
 
     <main>
         <div class="score-counters">
-            <p class="score PC-score">PC score: 0</p>
-            <p class="score player-score">Player score: 0</p>
+            <div class="individual-counter">
+                <p>PC score:</p>
+                <p class="score PC-score">0</p>
+            </div>
+            <div class="individual-counter">
+                <p>Player score:</p>
+                <p class="score player-score">0</p>
+            </div>
         </div>
         <div class="game-container">
             <div class="input-container">
                 <p>Make your choice:</p>
-                <input type="text" id="selected-option">
-                <button class="btn" id="play-game">PLAY</button>
+                <button class="btn play-game" data-choice='rock'>Rock</button>
+                <button class="btn play-game" data-choice='paper'>Paper</button>
+                <button class="btn play-game" data-choice='scissors'>Scissors</button>
             </div>
             <div class="choices-container">
                 <p class="choice PC-choice">PC chose</p>
                 <p class="choice player-choice">Player chose</p>
             </div>
             <div class="result-container">
-                <p></p>
+                <p id="match-result"></p>
             </div>
         </div>
         <div class="replay">

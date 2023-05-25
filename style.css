@@ -23,6 +23,34 @@ header h1:hover {
     font-size: 1.2rem;
     padding: 25px 0;
 }
+.individual-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.winner {
+    color: green;
+    font-size: 1.4;
+    font-weight: bold;
+    transition: 0.5s;
+    animation: moveLetters 0.5s infinite;
+}
+.looser {
+    color: red;
+    font-size: 1.4;
+    font-weight: bold;
+}
+@keyframes moveLetters {
+    0% {
+        transform: translateY(1px);
+    }
+    50% {
+        transform: translateY(-1px);
+    }
+    100% {
+        transform: translateY(1px);
+    }
+}
 
 .btn {
     padding: 4px 12px;
@@ -46,6 +74,12 @@ header h1:hover {
     justify-content: center;
     gap: 50px;
     padding: 25px 0;
+    visibility: hidden;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
 }
 
 .replay {
