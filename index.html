@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="game.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Rock, paper, scissors</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="score-counters">
+            <p class="score PC-score">PC score: 0</p>
+            <p class="score player-score">Player score: 0</p>
+        </div>
+        <div class="game-container">
+            <div class="input-container">
+                <p>Make your choice:</p>
+                <input type="text" id="selected-option">
+                <button class="btn" id="play-game">PLAY</button>
+            </div>
+            <div class="choices-container">
+                <p class="choice PC-choice">PC chose</p>
+                <p class="choice player-choice">Player chose</p>
+            </div>
+            <div class="result-container">
+                <p></p>
+            </div>
+        </div>
+        <div class="replay">
+            <button class="btn" id="replay-btn">Replay</button>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
